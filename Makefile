@@ -32,7 +32,7 @@ check:
 	@echo "OK: prerequisites found"
 
 setup:
-	sudo apt-get update
+	sudo apt-get update || true
 	sudo apt-get install -y ansible unzip
 	# k3d
 	curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
